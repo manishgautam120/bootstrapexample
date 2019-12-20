@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+
+    <title>Dashboard  Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/fc8583a176.js" crossorigin="anonymous"></script>
+    
+    <link href="css/dashboard1.css" rel="stylesheet">
+  </head>
+
+  <body>
+      <div class="container-fluid">
+        
+      <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-2">
+      <a class="navbar-brand col-sm-3 col-md-2 col-lg-2 mr-0" href="#"><img class="logo mr-2" src="images/01.png">Microsoft</a>
+      <input class="form-control form-control-dark w-90 col-lg-8" type="text" placeholder="Search" aria-label="Search">
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link mr-3" href="#">Sign out</a>
+        </li>
+      </ul>
+    </nav>
+
+</div>
+
+<div class="container-fluid mt-1 ">
+    
+    
+    <div class="col-lg-2">
+    <div id="mySidebar" class="sidebar mx-3">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Dashboard</i>&nbsp;&nbsp;&nbsp;&nbsp;&times;</a>
+
+        <div class="sidebar-sticky">
+            <ul class="nav flex-column" style="align-items: justify-content;">
+             
+              <li class="nav-item">
+                <a href="#"><i class="fas fa-shopping-cart mr-2"></i>Orders</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="product.html"><i class="fas fa-shopping-cart mr-2"></i>Products</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#"><i class="fas fa-users mr-2"></i>Customers</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="invoice.html"><i class="fas fa-file-invoice mr-2"></i>Invoices</a>
+              </li>
+            </ul>
+        </div>
+
+      </div>
+    </div>
+      
+    <div class="col-lg-10 ">
+        <div class="row">
+      <div id="main ">
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+        <h2>Collapsed Sidebar</h2>
+        <p>Content...</p>
+
+
+
+
+      </div>
+    </div>
+    </div>
+
+
+</div>
+
+                                     <!-- extra added -->
+<script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "290px";
+      document.getElementById("main").style.marginLeft = "290px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+  </body>
+</html>
